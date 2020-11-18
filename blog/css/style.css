@@ -48,4 +48,167 @@
 
 /* ------ START WRITING YOUR CODE BELOW ------ */
 
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size:16px;
+}
+
+body {
+    margin: 1.5rem auto;
+    width:90%;
+    min-width:56.25rem;
+}
+
+/* ---- Positioning and Grid Layout ---- */
+
+header h1 {
+    text-align: center;
+}
+
+.main-section {
+  display: grid;
+    grid-template-columns: 5fr 1fr;
+    grid-gap: 1rem;
+}
+
+article {
+    grid-column: 1;
+    grid-row: 1;
+}
+
+.subsection {
+    display: flex;
+}
+
+aside {
+    grid-column: 2;
+    grid-row: 1;
+
+}
+
+footer {
+    
+}
+
+/* ---- IMPORTED FONTS ---- */
+
+@font-face {
+    font-family:robotoslab;
+    src: url("../font/serif/robotoslab-regular.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal; 
+}
+
+@font-face {
+    font-family:montserrat;
+    src: url("../font/serif/montserrat-regular.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal; 
+}
+
+@font-face {
+    font-family:ultra;
+    src: url("../font/serif/ultra-regular.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal; 
+}
+
+/* ---- TYPOGRAPHY ---- */
+
+h1, h2, h3 {
+    font-family: robotoslab, "Georgia", sans-serif;
+}
+
+h1 {
+    font-size: 3rem;
+    transform: rotate(-5deg);
+}
+
+h2 {
+    font-size: 1.25rem;
+}
+
+h3{
+    font-size: 1rem;   
+}
+
+p {
+    font-family: montserrat, "Arial", sans-serif;
+    font-size: 0.75rem;
+    border-bottom: 1px black;
+    padding-bottom: 0.5rem 1rem
+}
+
+.highlight {
+    font-family: robotoslab;   
+    background-color: #732C2C;
+    display: inline-block;
+    padding: 0.75rem 1rem;
+    color: #C8C4B7;
+    border-radius: 0.75rem;
+    letter-spacing: 0.25rem;
+    box-shadow: 0.25rem 0.25rem 0.125rem #313C40;
+}
+
+/* ---- NAV MENU ---- */
+
+nav {
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    border-color: black;
+}
+
+nav a {
+    display: inline-block;
+    border: 1px solid black;
+    padding: 1rem 2rem;
+    margin-bottom: 0.5rem;
+    margin-top: 0.5rem;
+    
+}
+
+/* ---- Figures and Images ---- */
+
+figure{
+    
+}
+img{
+   width: 100%; 
+}
+
+.article-image {
+    float: left;
+    padding-right: 0.5rem;
+    width: 30%
+}
+
+figcaption{
+
+}
+
+/* ---- LINKS ---- */
+
+a{
+    
+}
+
+button{
+font-size: 1rem;
+display:inline-block;
+background: #3D70B2;
+color: white;
+border-radius:0.75rem;
+letter-spacing:0.2rem;
+padding: 0.5rem 0.5rem
+}
+
+.expand{
+    
+}
+
+
+
 
